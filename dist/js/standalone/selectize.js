@@ -2548,6 +2548,7 @@
 		 * @param {string} value
 		 */
 		removeItem: function(value, silent) {
+			if (!value) { return false; }
 			var self = this;
 			var $item, i, idx;
 	
